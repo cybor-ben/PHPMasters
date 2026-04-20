@@ -17,6 +17,7 @@ Facturation
 │       └── scanner.js
 ├── auth
 │   ├── login.php
+|   ├── logout.php
 │   └── session.php
 ├── config
 │   └── config.php
@@ -99,7 +100,7 @@ Avant de commencer toute modification :
 1.  **Synchronisez-vous** avec le chef de projet :
     ```bash
     git checkout main
-    git pull upstream main
+    git pull origin main
     ```
 2.  **Créez une branche** dédiée à votre tâche :
     ```bash
