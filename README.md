@@ -1,92 +1,93 @@
-# Structure Du Projet
+# PHPMasters - Système de Facturation 
 
-├── assets
-│   ├── css
-│   │   └── styles.css
-│   ├── images
-│   │   ├── billets-dargent.png
-│   │   └── facture-dachat.png
-│   └── js
-│       └── scanner.js
-├── auth
-│   ├── login.php
-│   └── session.php
-├── config
-│   └── config.php
-├── data
-│   ├── factures.json
-│   ├── produits.json
-│   └── utilisateurs.json
-├── docs
-│   └── TP_PROGRAMMATION_WEB_PHP_L2_FASI_20252026-1.pdf
-├── includes
-│   ├── fonction-auth.php
-│   ├── fonction-factures.php
-│   ├── fonction-produits.php
-│   ├── footer.php
-│   └── header.php
-├── modules
-│   ├── admin
-│   │   ├── gestion-comptes.php
-│   │   └── suprimer-compte.php
-│   ├── facturation
-│   │   ├── afficher-facture.php
-│   │   ├── calcul.php
-│   │   └── nouvelle-facture.php
-│   └── produits
-│       ├── enregistrer.php
-│       ├── lire.php
-│       └── liste.php
-├── rapports
-│   ├── rapport-journalier.php
-│   └── rapport-mensuel.php
-├── .editorconfig
-├── index.php
-└── README.md
+Ce projet est une application de gestion de facturation développée avec une architecture robuste, visant à offrir une solution complète pour la gestion des données, des rapports et de l'authentification.
 
+##  Arborescence du Projet
 
-# Points Essentiels Du projet
+facturation/
+├── assets/             # Ressources statiques (CSS, JS, Images)
+│   └── css/
+│       └── styles.css
+├── auth/               # Gestion des sessions et connexion
+├── config/             # Configuration DB et constantes
+├── data/               # Scripts SQL et exports de données
+├── docs/               # Documentation technique (MCD, MLD, MPD)
+├── includes/           # Composants UI réutilisables
+│   ├── header.php
+│   └── footer.php
+├── modules/            # Logique métier (Factures, Clients, etc.)
+├── rapports/           # Génération de statistiques et PDF
+├── index.php           # Point d'entrée de l'application
+└── README.md           # Documentation du projet
 
-config/ # Paramètres globaux (Taux TVA, Chemins des fichiers, etc)
+##  Structure du Projet
 
-auth/ # Gestions de l'authentification et des sessions
+L'organisation des fichiers respecte une séparation stricte des responsabilités pour faciliter la maintenance :
 
-modules/ # Modules Fonctionnels du projet
+* **assets/** : Ressources statiques (CSS, JS, images).
+* **auth/** : Gestion de l'authentification et des sessions.
+* **config/** : Fichiers de configuration (Base de données, variables d'environnement).
+* **data/** : Stockage des données ou scripts SQL.
+* **docs/** : Documentation technique et modèles (MCD, MLD).
+* **includes/** : Composants réutilisables (header, footer, navbar).
+* **modules/** : Logique métier par fonctionnalité.
+* **rapports/** : Génération de documents et statistiques.
+* **index.php** : Point d'entrée principal de l'application.
 
-data/ # Fichiers de persistance des données
+## 🛠️ Stack Technique
 
-includes/ # Fonctions PHP réutilisables incluse dans les pages
+- **Backend** : PHP (Architecture modulaire)
+- **Frontend** : HTML5, CSS3, JavaScript
+- **Base de données** : MySQL
+- **Outils** : Git, VS Code
 
-assets/ # Ressources Statiques CSS,JAVASCRIPT
+---
 
-rapports/ # Géneration des rapports journaliers et mensuels
+## Guide du Collaborateur (Workflow)
 
-docs/ # Fichier Source du tp
+Pour assurer la stabilité de la branche principale (`main`), tous les collaborateurs doivent suivre ce workflow basé sur le **Forking**.
 
-.editorconfig/ # Fichier de configuration de l'editeur
+### 1. Initialisation
+1.  **Forker** le projet sur GitHub (créer votre propre copie).
+2.  **Cloner** votre fork localement :
+    ```bash
+    git clone [https://github.com/VOTRE_NOM/PHPMasters.git](https://github.com/VOTRE_NOM/PHPMasters.git)
+    ```
+3.  **Lier** le dépôt original (origin) :
+    ```bash
+    git remote add origin [https://github.com/cybor-ben/PHPMasters.git](https://github.com/cybor-ben/PHPMasters.git)
+    ```
 
-# Guide d'installation 
+### 2. Cycle de Travail Quotidien
+Avant de commencer toute modification :
+1.  **Synchronisez-vous** avec le chef de projet :
+    ```bash
+    git checkout main
+    git pull upstream main
+    ```
+2.  **Créez une branche** dédiée à votre tâche :
+    ```bash
+    git checkout -b feature/nom-de-la-tache
+    ```
+3.  **Codez et Commitez** vos changements :
+    ```bash
+    git add .
+    git commit -m "Description claire de la modification"
+    ```
 
-PHP serveur local:
-  php -S localhost:8000
-  Télechargement:
-    https://www.php.net/downloads.php
+### 3. Soumission du travail
+1.  **Poussez** la branche sur votre fork :
+    ```bash
+    git push origin feature/nom-de-la-tache
+    ```
+2.  **Ouvrez une Pull Request (PR)** sur GitHub vers le dépôt `cybor-ben/PHPMasters`.
+3.  **Attendez la validation** : Le chef de projet (Admin) examinera votre code avant de fusionner.
 
-Xampp serveur:
-  https://www.youtube.com/watch?v=cKgs4xfpE9w
-  Télechargement:
-    https://www.apachefriends.org/download.html
+---
 
-Laragon serveur:
-  https://www.youtube.com/watch?v=sHHl5kihXD4
-  Télechargement:
-    https://laragon.org/download
+##  Rôle de l'Administrateur
+* **Validation** : Seul l'admin approuve et fusionne les Pull Requests.
+* **Protection** : La branche `main` est protégée contre les push directs pour éviter les erreurs.
 
-
-# Documentation Bootstrap
-
-https://getbootstrap.com/
-
-
-# Git Workflow
-
+---
+© 2026 PHPMasters - Projet collaboratif de gestion.
