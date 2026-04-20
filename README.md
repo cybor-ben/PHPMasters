@@ -1,9 +1,10 @@
-# PHPMasters - Système de Facturation 
+# 📄 PHPMasters - Système de Facturation
 
 Ce projet est une application de gestion de facturation développée avec une architecture robuste, visant à offrir une solution complète pour la gestion des données, des rapports et de l'authentification.
 
-##  Arborescence du Projet
+## 📁 Arborescence du Projet
 
+```text
 facturation/
 ├── assets/             # Ressources statiques (CSS, JS, Images)
 │   └── css/
@@ -19,20 +20,21 @@ facturation/
 ├── rapports/           # Génération de statistiques et PDF
 ├── index.php           # Point d'entrée de l'application
 └── README.md           # Documentation du projet
+```
 
-##  Structure du Projet
+## 🧱 Structure du Projet
 
 L'organisation des fichiers respecte une séparation stricte des responsabilités pour faciliter la maintenance :
 
-* **assets/** : Ressources statiques (CSS, JS, images).
-* **auth/** : Gestion de l'authentification et des sessions.
-* **config/** : Fichiers de configuration (Base de données, variables d'environnement).
-* **data/** : Stockage des données ou scripts SQL.
-* **docs/** : Documentation technique et modèles (MCD, MLD).
-* **includes/** : Composants réutilisables (header, footer, navbar).
-* **modules/** : Logique métier par fonctionnalité.
-* **rapports/** : Génération de documents et statistiques.
-* **index.php** : Point d'entrée principal de l'application.
+- **assets/** : Ressources statiques (CSS, JS, images).
+- **auth/** : Gestion de l'authentification et des sessions.
+- **config/** : Fichiers de configuration (Base de données, variables d'environnement).
+- **data/** : Stockage des données ou scripts SQL.
+- **docs/** : Documentation technique et modèles (MCD, MLD).
+- **includes/** : Composants réutilisables (header, footer, navbar).
+- **modules/** : Logique métier par fonctionnalité.
+- **rapports/** : Génération de documents et statistiques.
+- **index.php** : Point d'entrée principal de l'application.
 
 ## 🛠️ Stack Technique
 
@@ -43,11 +45,12 @@ L'organisation des fichiers respecte une séparation stricte des responsabilité
 
 ---
 
-## Guide du Collaborateur (Workflow)
+## 🔧 Guide du Collaborateur (Workflow)
 
 Pour assurer la stabilité de la branche principale (`main`), tous les collaborateurs doivent suivre ce workflow basé sur le **Forking**.
 
-### 1. Initialisation
+### 🚀 1. Initialisation
+
 1.  **Forker** le projet sur GitHub (créer votre propre copie).
 2.  **Cloner** votre fork localement :
     ```bash
@@ -58,8 +61,10 @@ Pour assurer la stabilité de la branche principale (`main`), tous les collabora
     git remote add origin [https://github.com/cybor-ben/PHPMasters.git](https://github.com/cybor-ben/PHPMasters.git)
     ```
 
-### 2. Cycle de Travail Quotidien
+### 🔄 2. Cycle de Travail Quotidien
+
 Avant de commencer toute modification :
+
 1.  **Synchronisez-vous** avec le chef de projet :
     ```bash
     git checkout main
@@ -75,7 +80,8 @@ Avant de commencer toute modification :
     git commit -m "Description claire de la modification"
     ```
 
-### 3. Soumission du travail
+### 📤 3. Soumission du travail
+
 1.  **Poussez** la branche sur votre fork :
     ```bash
     git push origin feature/nom-de-la-tache
@@ -85,9 +91,11 @@ Avant de commencer toute modification :
 
 ---
 
-##  Rôle de l'Administrateur
-* **Validation** : Seul l'admin approuve et fusionne les Pull Requests.
-* **Protection** : La branche `main` est protégée contre les push directs pour éviter les erreurs.
+## 🛡️ Rôle de l'Administrateur
+
+- **Validation** : Seul l'admin approuve et fusionne les Pull Requests.
+- **Protection** : La branche `main` est protégée contre les push directs pour éviter les erreurs.
 
 ---
+
 © 2026 PHPMasters - Projet collaboratif de gestion.
