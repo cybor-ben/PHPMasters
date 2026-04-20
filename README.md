@@ -5,42 +5,73 @@ Ce projet est une application de gestion de facturation développée avec une ar
 ## 📁 Arborescence du Projet
 
 ```text
-facturation/
-├── assets/             # Ressources statiques (CSS, JS, Images)
-│   └── css/
-│       └── styles.css
-├── auth/               # Gestion des sessions et connexion
-├── config/             # Configuration DB et constantes
-├── data/               # Scripts SQL et exports de données
-├── docs/               # Documentation technique (MCD, MLD, MPD)
-├── includes/           # Composants UI réutilisables
-│   ├── header.php
-│   └── footer.php
-├── modules/            # Logique métier (Factures, Clients, etc.)
-├── rapports/           # Génération de statistiques et PDF
-├── index.php           # Point d'entrée de l'application
-└── README.md           # Documentation du projet
+
+Facturation
+├── assets
+│   ├── css
+│   │   └── styles.css
+│   ├── images
+│   │   ├── billets-dargent.png
+│   │   └── facture-dachat.png
+│   └── js
+│       └── scanner.js
+├── auth
+│   ├── login.php
+│   └── session.php
+├── config
+│   └── config.php
+├── data
+│   ├── factures.json
+│   ├── produits.json
+│   └── utilisateurs.json
+├── docs
+│   └── TP_PROGRAMMATION_WEB_PHP_L2_FASI_20252026-1.pdf
+├── includes
+│   ├── fonction-auth.php
+│   ├── fonction-factures.php
+│   ├── fonction-produits.php
+│   ├── footer.php
+│   └── header.php
+├── modules
+│   ├── admin
+│   │   ├── gestion-comptes.php
+│   │   └── suprimer-compte.php
+│   ├── facturation
+│   │   ├── afficher-facture.php
+│   │   ├── calcul.php
+│   │   └── nouvelle-facture.php
+│   └── produits
+│       ├── enregistrer.php
+│       ├── lire.php
+│       └── liste.php
+├── rapports
+│   ├── rapport-journalier.php
+│   └── rapport-mensuel.php
+├── .editorconfig
+├── index.php
+└── README.md
+
 ```
 
 ## 🧱 Structure du Projet
 
 L'organisation des fichiers respecte une séparation stricte des responsabilités pour faciliter la maintenance :
 
-- **assets/** : Ressources statiques (CSS, JS, images).
-- **auth/** : Gestion de l'authentification et des sessions.
-- **config/** : Fichiers de configuration (Base de données, variables d'environnement).
-- **data/** : Stockage des données ou scripts SQL.
-- **docs/** : Documentation technique et modèles (MCD, MLD).
-- **includes/** : Composants réutilisables (header, footer, navbar).
-- **modules/** : Logique métier par fonctionnalité.
-- **rapports/** : Génération de documents et statistiques.
+- **assets/** :Ressources statiques (CSS, JavaScript)
+- **auth/** : Gestion de l’authentification et des sessions
+- **config/** : Paramètres globaux (taux TVA, chemins des fichiers, etc.)
+- **data/** : Fichiers de persistance des données
+- **docs/** : Documentation technique.
+- **includes/** : Fonctions PHP réutilisables incluses dans les pages
+- **modules/** : Modules fonctionnels (produits, facturation, administration)
+- **rapports/** : Génération des rapports journaliers et mensuels
 - **index.php** : Point d'entrée principal de l'application.
 
 ## 🛠️ Stack Technique
 
-- **Backend** : PHP (Architecture modulaire)
+- **Backend** : PHP 
 - **Frontend** : HTML5, CSS3, JavaScript
-- **Base de données** : MySQL
+- **Base de données** : JSON
 - **Outils** : Git, VS Code
 
 ---
