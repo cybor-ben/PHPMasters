@@ -1,50 +1,48 @@
 # Structure Du Projet
 
-├── assets
-│   ├── css
-│   │   └── styles.css
-│   ├── images
-│   │   ├── billets-dargent.png
-│   │   └── facture-dachat.png
-│   └── js
-│       └── scanner.js
-├── auth
-│   ├── login.php
-│   └── session.php
-├── config
-│   └── config.php
-├── data
-│   ├── factures.json
-│   ├── produits.json
-│   └── utilisateurs.json
-├── docs
-│   └── TP_PROGRAMMATION_WEB_PHP_L2_FASI_20252026-1.pdf
-├── includes
-│   ├── fonction-auth.php
-│   ├── fonction-factures.php
-│   ├── fonction-produits.php
-│   ├── footer.php
-│   └── header.php
-├── modules
-│   ├── admin
-│   │   ├── gestion-comptes.php
-│   │   └── suprimer-compte.php
-│   ├── facturation
-│   │   ├── afficher-facture.php
-│   │   ├── calcul.php
-│   │   └── nouvelle-facture.php
-│   └── produits
-│       ├── enregistrer.php
-│       ├── lire.php
-│       └── liste.php
-├── rapports
-│   ├── rapport-journalier.php
-│   └── rapport-mensuel.php
-├── .editorconfig
-├── index.php
-└── README.md
-
-
+facturation
+ ┣ assets
+ ┃ ┣ css
+ ┃ ┃ ┗ styles.css
+ ┃ ┗ js
+ ┃ ┃ ┗ scanner.js
+ ┣ auth
+ ┃ ┣ login.php
+ ┃ ┣ logout.php
+ ┃ ┗ session.php
+ ┣ config
+ ┃ ┗ config.php
+ ┣ data
+ ┃ ┣ factures.json
+ ┃ ┣ produits.json
+ ┃ ┗ utilisateurs.json
+ ┣ docs
+ ┃ ┗ TP_PROGRAMMATION_WEB_PHP_L2_FASI_20252026-1.pdf
+ ┣ includes
+ ┃ ┣ fonction-auth.php
+ ┃ ┣ fonction-factures.php
+ ┃ ┣ fonction-produits.php
+ ┃ ┣ footer.php
+ ┃ ┗ header.php
+ ┣ modules
+ ┃ ┣ admin
+ ┃ ┃ ┣ ajouter-compte.php
+ ┃ ┃ ┣ gestion-comptes.php
+ ┃ ┃ ┗ suprimer-compte.php
+ ┃ ┣ facturation
+ ┃ ┃ ┣ afficher-facture.php
+ ┃ ┃ ┣ calcul.php
+ ┃ ┃ ┗ nouvelle-facture.php
+ ┃ ┗ produits
+ ┃ ┃ ┣ enregistrer.php
+ ┃ ┃ ┣ lire.php
+ ┃ ┃ ┗ liste.php
+ ┣ rapports
+ ┃ ┣ rapport-journalier.php
+ ┃ ┗ rapport-mensuel.php
+ ┣ .editorconfig
+ ┣ index.php
+ ┗ README.md
 
 # Points Essentiels Du projet
 
